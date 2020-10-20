@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Game, type: :model do
+  it { should have_many :game_achievements }
   it { should belong_to(:home_team).class_name('Team') }
   it { should belong_to(:guest_team).class_name('Team') }
 
