@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :achievement do
-    title { "MyString" }
+    title { "My Title" }
   end
 end
