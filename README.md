@@ -1,24 +1,20 @@
-# README
+### GET /games
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Выводит последние 10 игр с отображением наименований команд участниц в формате Команда1 : Команда2
 
-Things you may want to cover:
 
-* Ruby version
+### GET /players/:player_id/achivements/:id
 
-* System dependencies
+**:player_id** идентификатор игрока
+**:id** идентификатор показателя
 
-* Configuration
+Возращает всех игроков команды по алфавиту.
 
-* Database creation
 
-* Database initialization
+### POST /players/:player_id/achivements/:id
 
-* How to run the test suite
+**:player_id** идентификатор игрока
+**:id** идентификатор показателя
+**:game_id** идентификатор матча (передаётся в параметрах)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Отмечает, что игрок выполнил такой-то показатель в матче
