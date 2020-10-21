@@ -29,6 +29,6 @@ class AchievementsController < ApplicationController
   end
 
   def find_game
-    @game = Game.find(params[:game_id]).includes(:home_team, :guest_team)
+    @game = Game.includes(:home_team, :guest_team).find(params[:game_id])
   end
 end

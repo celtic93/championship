@@ -1,5 +1,5 @@
 class GameAchievementSerializer < ActiveModel::Serializer
-  :player, :achievement, :game
+  attributes :player, :achievement, :game
 
   def player
     object.player.name
