@@ -8,4 +8,8 @@ class Game < ApplicationRecord
   validates :date, presence: true
 
   scope :last_games, -> { order(date: :desc).limit(LAST_GAMES_COUNT) }
+
+  def title
+    "#{home_team.name} : #{guest_team.name}"
+  end
 end
