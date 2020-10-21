@@ -3,7 +3,7 @@
 Выводит последние 10 игр с отображением наименований команд участниц в формате Команда1 : Команда2
 
 
-### GET /players/:player_id/achivements/:id
+### GET /players/:player_id/achievements/:id
 
 **:player_id** идентификатор игрока
 **:id** идентификатор показателя
@@ -11,7 +11,7 @@
 Возращает всех игроков команды по алфавиту.
 
 
-### POST /players/:player_id/achivements/:id
+### POST /players/:player_id/achievements/:id
 
 **:player_id** идентификатор игрока
 **:id** идентификатор показателя
